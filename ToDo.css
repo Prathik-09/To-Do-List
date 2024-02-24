@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color: rgb(80, 225, 244); 
+   box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container{
+   
+    width: 400px;
+    background: white;
+    border-radius: 30px;
+}
+h2{
+    margin-left: 17px;
+    font-size: 1.3em;
+    color: #767676;
+}
+img{
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-right: 20px;
+}
+.display input{
+    margin-left: 10px;
+    width: 70%;
+    height: 30px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: .9em;
+}
+button{
+    float: right; 
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(75, 73, 171);
+    color: white;
+    border: none;
+    outline: none; 
+    height: 30px; 
+    }
+button:active{
+    transition: all .3s ease;
+    transform: scale(.9);   
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 12px;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: url(unchecked.png);
+    background-size: cover;
+    top: 1px;
+    left: -26px;
+}
+ul li.checked{
+    background: #3700a4;
+    color: #fff;
+    border-radius: 50px;
+}
+ul li.checked::before{
+    background: url(checked1.png);
+    background-size: cover;
+    color: black;
+}
+ul li span{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    line-height: 20px;
+
+}
+ul li span:hover{
+    background: black;
+    color: white;
+}
+ul li.checked span{
+    color: #ffffff;
+}
+
+ul li.checked span:hover{
+    background: #fff;
+    color: #000;
+}
+#tasks p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+}
